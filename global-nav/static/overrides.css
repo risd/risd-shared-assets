@@ -2,7 +2,6 @@
   background-image: url('./search-submit.svg');
 }
 
-
 .global-header .primary-nav__link-toggle::after,
 .global-header .primary-nav__third-level-toggle::after {
   background-image: url('./caret.svg');
