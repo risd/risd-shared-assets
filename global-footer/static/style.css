@@ -1,0 +1,289 @@
+.visually-hidden {
+ clip:rect(1px,1px,1px,1px);
+ height:1px;
+ overflow:hidden;
+ position:absolute!important;
+ width:1px
+}
+
+.site__footer {
+ --sans-serif:"Gotham A", "Gotham B", "Arial", sans-serif;
+ --darkest-color: rgb(0, 0, 0);
+ --dark-color: rgb(85, 85, 85);
+ --lightest-color: rgb(255, 255, 255);
+ --theme-color: #00a133;
+ position:relative;
+ z-index:500;
+ display:flex;
+ flex-wrap:wrap;
+ justify-content:center;
+ padding:4rem 0 1rem;
+ background-color:#000;
+ background:#000;
+ background:var(--darkest-color,#000);
+ color:#fff;
+ color:var(--lightest-color,#fff)
+}
+@media screen and (min-width:961px) {
+ .site__footer {
+  justify-content:flex-start
+ }
+}
+.site__footer a {
+  text-decoration: none;
+}
+.footer__container {
+ display:flex;
+ max-width:1152px;
+ flex-basis:90%;
+ flex-flow:column wrap;
+ align-items:center;
+ margin-right:auto;
+ margin-left:auto
+}
+@media screen and (min-width:513px) {
+ .footer__container {
+  flex-basis:95%;
+  flex-direction:row;
+  align-items:stretch;
+  justify-content:space-between
+ }
+}
+@media screen and (min-width:961px) {
+ .footer__container {
+  flex-basis:100%
+ }
+}
+.footer__logo {
+ margin-bottom:3rem
+}
+@media screen and (min-width:513px) {
+ .footer__logo {
+  flex-basis:80px;
+  margin-bottom:0;
+  text-align:left
+ }
+}
+@media screen and (min-width:769px) {
+ .footer__logo {
+  flex-basis:130px;
+  text-align:center
+ }
+}
+@media screen and (min-width:961px) {
+ .footer__logo {
+  flex-basis:18%
+ }
+}
+.footer__logo img {
+ max-width:130px;
+ height:auto
+}
+.footer__logo circle,
+.footer__logo path {
+ fill:var(--dark-color);
+}
+.footer__logo--simplified {
+ display:block;
+ width:70px
+}
+@media screen and (min-width:513px) {
+ .footer__logo--simplified {
+  display:none
+ }
+}
+.footer__logo--full {
+ display:none;
+ height:130px;
+ width:130px
+}
+@media screen and (min-width:513px) {
+ .footer__logo--full {
+  display:block
+ }
+}
+.footer__text {
+ display:flex;
+ flex-flow:column wrap;
+ flex-grow:1
+}
+@media screen and (min-width:513px) {
+ .footer__text {
+  flex-basis:50%;
+  align-content:space-around;
+  justify-content:flex-start;
+  padding-right:1rem;
+  padding-left:2rem
+ }
+}
+@media screen and (min-width:769px) {
+ .footer__text {
+  flex-direction:row;
+  align-content:space-around;
+  justify-content:space-around;
+  padding-right:2rem;
+  padding-left:2rem
+ }
+}
+@media screen and (min-width:961px) {
+ .footer__text {
+  flex-basis:50%;
+  justify-content:space-around
+ }
+}
+.footer__item {
+ font-size:12px;
+ line-height:1.5;
+ margin-bottom:3rem;
+ color:#fff;
+ color:var(--lightest-color,#fff);
+ text-align:center
+}
+@media screen and (min-width:513px) {
+ .footer__item {
+  flex-basis:50%;
+  padding-right:1rem;
+  text-align:left
+ }
+ .footer__item:nth-child(2n) {
+  padding-right:0
+ }
+ .footer__item:first-child {
+  flex-basis:100%
+ }
+ .footer__item:nth-child(2) {
+  flex-basis:0;
+  margin-bottom:0
+ }
+}
+@media screen and (min-width:769px) {
+ .footer__item:first-child,
+ .footer__item:nth-child(2) {
+  flex-basis:auto
+ }
+}
+@media screen and (min-width:961px) {
+ .footer__item {
+  flex-basis:auto;
+  padding-right:2rem
+ }
+ .footer__item:first-child {
+  flex-basis:30%;
+  padding-right:2rem
+ }
+ .footer__item:nth-child(2) {
+  display:flex;
+  flex-basis:calc(70% - 2rem);
+  flex-wrap:wrap;
+  align-content:flex-start;
+  padding-right:0
+ }
+}
+.footer__item p {
+  font-family: var(--sans-serif);
+ margin-bottom:1rem
+}
+.footer__item a {
+ display:block;
+ color:#fff;
+ color:var(--lightest-color,#fff)
+}
+.footer__item a:focus,
+.footer__item a:hover {
+ color:#00a133;
+ color:var(--theme-color)
+}
+.footer__social {
+ display:flex;
+ flex-basis:80px;
+ flex-grow:0;
+ flex-wrap:wrap;
+ align-content:flex-start
+}
+.footer__social-link {
+ display:flex;
+ flex:0 0 50%;
+ margin-bottom:1rem
+}
+.footer__social-link:nth-child(2n) {
+ justify-content:flex-start;
+ padding-left:.5rem
+}
+.footer__social-link:nth-child(odd) {
+ justify-content:flex-end;
+ padding-right:.5rem
+}
+.footer__social-icon {
+ width:30px;
+ height:30px
+}
+.footer__social-icon circle,
+.footer__social-icon path {
+ fill:var(--dark-color)
+}
+.footer__social-icon:focus circle,
+.footer__social-icon:focus path,
+.footer__social-icon:hover circle,
+.footer__social-icon:hover path {
+ fill:var(--neutral-color)
+}
+.footer__title {
+  font-family: var(--sans-serif);
+ font-size:12px;
+ line-height:1.5;
+ margin-bottom:.5rem;
+ color:#fff;
+ color:var(--lightest-color,#fff);
+ font-weight:700;
+ letter-spacing: 0.05em;
+ text-transform: uppercase;
+}
+@media screen and (min-width:961px) {
+ .footer__title {
+  flex-basis:50%
+ }
+}
+.footer__title a {
+ display:block
+}
+.footer__title a:focus,
+.footer__title a:hover {
+ color:#00a133;
+ color:var(--theme-color)
+}
+.footer__title a[target=_blank]:after {
+ background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="12" height="11" viewbox="0 0 12 11" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.27538 0H11.7529V7.47755H9.87373V3.208L2.08173 11L0.75293 9.6712L8.54493 1.8792H4.27538V0Z" fill="%23ffffff"/></svg>');
+ background-size:contain;
+ color:#fff;
+ color:var(--lightest-color,#fff);
+ content:"";
+ display:inline-block;
+ height:.5rem;
+ width:.6rem
+}
+.footer__title a[target=_blank]:hover:after {
+ background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="12" height="11" viewbox="0 0 12 11" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.27538 0H11.7529V7.47755H9.87373V3.208L2.08173 11L0.75293 9.6712L8.54493 1.8792H4.27538V0Z" fill="%2300a133"/></svg>');
+ background-size:contain
+}
+.footer__copyright {
+ font-family: var(--sans-serif);
+ font-size:10px;
+ line-height:1.6;
+ flex-basis:100%;
+ flex-basis:90%;
+ padding:1rem 0;
+ margin-top:1rem;
+ color:#555;
+ color:var(--dark-color,#555);
+ text-align:center
+}
+@media screen and (min-width:513px) {
+ .footer__copyright {
+  flex-basis:95%
+ }
+}
+@media screen and (min-width:961px) {
+ .footer__copyright {
+  flex-basis:100%
+ }
+}

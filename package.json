@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy:global-nav": "rm-wh push-static shared.risd.systems --staticFolder=global-nav --staticPrefix=global-nav",
-    "deploy": "npm run deploy:global-nav"
+    "deploy:global-footer": "rm-wh push-static shared.risd.systems --staticFolder=global-footer --staticPrefix=global-footer",
+    "deploy": "npm run deploy:global-nav && npm run deploy:global-footer"
   },
   "author": "",
   "license": "ISC",
