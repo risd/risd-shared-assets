@@ -1,5 +1,5 @@
-.hidden,
-.visually-hidden {
+.global-header .hidden,
+.global-header .visually-hidden {
  clip:rect(1px,1px,1px,1px);
  height:1px;
  overflow:hidden;
@@ -25,64 +25,7 @@ body {
  --darkest-color:#000;
  --dark-blue:#2b5aa8;
  --darkest-blue:#17283a;
- --success-color:#23e376;
- --notice-color:#0078ff;
- --warning-color:#ffac30;
- --error-color:#df0000;
- --home-hero-takeover-color:var(--dark-blue);
- --home-hero-takeover-color--highlight:#0f74e6;
- --home-hero-takeover-color--background:var(--darkest-blue);
- --primary-color:#00a133;
- --primary-color--highlight:#00852a;
- --theme-color:var(--primary-color);
- --theme-color--highlight:var(--primary-color--highlight);
- --apparel-design-color:#d90960;
- --apparel-design-color--highlight:#b80851;
- --architecture-color:#a41b1b;
- --architecture-color--highlight:#710404;
- --ceramics-color:maroon;
- --ceramics-color--highlight:#630000;
- --digital-media-color:#00eb00;
- --digital-media-color--highlight:#00d700;
- --film-animation-video-color:#4d2091;
- --film-animation-video-color--highlight:#3b186f;
- --foundation-studies-color:#096e93;
- --foundation-studies-color--highlight:#005a7f;
- --furniture-design-color:#ff560b;
- --furniture-design-color--highlight:#cf4609;
- --glass-color:#00a8e6;
- --glass-color--highlight:#0082b3;
- --graphic-design-color:#333e4f;
- --graphic-design-color--highlight:#232c38;
- --theory-history-of-art-design-color:#78ab27;
- --theory-history-of-art-design-color--highlight:#649709;
- --history-philosophy-the-social-sciences-color:#baa74b;
- --history-philosophy-the-social-sciences-color--highlight:#a69337;
- --illustration-color:#710480;
- --illustration-color--highlight:#590366;
- --industrial-design-color:#a83c0e;
- --industrial-design-color--highlight:#802e0b;
- --interior-architecture-color:#1e4e24;
- --interior-architecture-color--highlight:#16431b;
- --jewelry-metalsmithing-color:#ffb503;
- --jewelry-metalsmithing-color--highlight:#cf9302;
- --landscape-architecture-color:#61af08;
- --landscape-architecture-color--highlight:#569c07;
- --literary-arts-studies-color:#783232;
- --literary-arts-studies-color--highlight:#641e1e;
- --painting-color:#003bf1;
- --painting-color--highlight:#002bba;
- --photography-color:#454539;
- --photography-color--highlight:#3b3b30;
- --printmaking-color:#f00000;
- --printmaking-color--highlight:#ce0000;
- --sculpture-color:#0cb;
- --sculpture-color--highlight:#00a698;
- --teaching-learning-in-art-design-color:#00a666;
- --teaching-learning-in-art-design-color--highlight:#008c50;
- --textiles-color:#ff8f08;
- --textiles-color--highlight:#d37300
-}
+ }
 .global-header .primary-nav__back,
 .global-header .primary-nav__link-toggle,
 .global-header .primary-nav__menu,
@@ -96,13 +39,6 @@ body {
  -moz-osx-font-smoothing:grayscale;
  -webkit-font-smoothing:antialiased
 }
-.footer__item,
-.footer__title {
- -moz-font-smoothing:antialiased;
- -webkit-font-smoothing:antialiased
-}
-.footer__copyright,
-.footer__title,
 .global-header .utility-nav h4 {
  letter-spacing:.05em;
  text-transform:uppercase
@@ -124,10 +60,6 @@ html {
  -ms-text-size-adjust:100%;
  -webkit-text-size-adjust:100%
 }
-footer,
-header {
- display:block
-}
 body {
  margin:0
 }
@@ -136,16 +68,16 @@ body {
  color:#000;
  text-shadow:none;
 }
-img {
+.global-header img {
  border-style:none;
 }
-svg {
+.global-header svg {
  fill:currentColor;
 }
-svg:not(:root) {
+.global-header svg:not(:root) {
  overflow:hidden;
 }
-button {
+.global-header button {
  margin:0;
  background-color:transparent;
  color:inherit;
@@ -158,23 +90,23 @@ button {
  cursor:pointer;
  outline:0;
 }
-button::-moz-focus-inner {
+.global-header button::-moz-focus-inner {
  border-style:none;
  padding:0
 }
-button:-moz-focusring {
+.global-header button:-moz-focusring {
  outline:1px dotted ButtonText
 }
-::-webkit-file-upload-button {
+.global-header ::-webkit-file-upload-button {
  -webkit-appearance:button;
  font:inherit
 }
-* {
+.global-header * {
  padding:0;
  border:0;
  margin:0
 }
-a {
+.global-header a {
  color:inherit;
  outline:0;
  text-decoration:none;
@@ -198,6 +130,7 @@ html {
  scroll-margin-top:85px
 }
 .global-header {
+ display: block;
  max-height:46px;
  max-height:var(--global-nav-height,46px);
  overflow:hidden;
@@ -705,77 +638,6 @@ html {
  --font-size-5:14px;
  --font-size-6:12px;
  --font-size-7:10px;
- --letter-spacing-tight:-0.05em;
- --letter-spacing-1:0.05em;
- --letter-spacing-2:0.1em;
- --line-height-solid:1;
- --line-height-title:1.25;
- --line-height-copy:1.5;
- --measure:30em;
- --measure-narrow:20em;
- --measure-wide:40em;
- --spacing-none:0;
- --spacing-extra-small:0.5rem;
- --spacing-small:1rem;
- --spacing-medium:1.5rem;
- --spacing-large:2rem;
- --spacing-extra-large:2.5rem;
- --spacing-extra-extra-large:3rem;
- --spacing-extra-extra-extra-large:3.5rem;
- --spacing-copy-separator:1.5em;
- --height-1:1rem;
- --height-2:2rem;
- --height-3:4rem;
- --height-4:8rem;
- --height-5:16rem;
- --width-1:1rem;
- --width-2:2rem;
- --width-3:4rem;
- --width-4:8rem;
- --width-5:16rem;
- --max-width-1:1rem;
- --max-width-2:2rem;
- --max-width-3:4rem;
- --max-width-4:8rem;
- --max-width-5:16rem;
- --max-width-6:32rem;
- --max-width-7:48rem;
- --max-width-8:64rem;
- --max-width-9:96rem;
- --max-width-page-wide:1152px;
- --border-radius-none:0;
- --border-radius-1:0.125rem;
- --border-radius-2:0.25rem;
- --border-radius-3:0.5rem;
- --border-radius-4:1rem;
- --border-radius-circle:100%;
- --border-radius-pill:9999px;
- --border-width-none:0;
- --border-width-1:0.125rem;
- --border-width-2:0.25rem;
- --border-width-3:0.5rem;
- --border-width-4:1rem;
- --border-width-5:2rem;
- --box-shadow-1:0px 0px 4px 2px rgba(0,
- 0,
- 0,
- 0.2);
- --box-shadow-2:0px 0px 8px 2px rgba(0,
- 0,
- 0,
- 0.2);
- --box-shadow-3:2px 2px 4px 2px rgba(0,
- 0,
- 0,
- 0.2);
- --box-shadow-4:2px 2px 8px 0px rgba(0,
- 0,
- 0,
- 0.2);
- --box-shadow-5:4px 4px 8px 0px rgba(0,
- 0,
- 0,
- 0.2);
  --black:#000;
  --near-black:#111;
  --dark-gray:#333;
@@ -909,6 +771,4 @@ html {
  --washed-green:#e8fdf5;
  --washed-yellow:#fffceb;
  --washed-red:#ffdfdf;
- --theme:var(--theme-color);
- --theme-hl:var(--theme-color--highlight)
 }

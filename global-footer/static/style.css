@@ -1,4 +1,4 @@
-.visually-hidden {
+.site__footer .visually-hidden {
  clip:rect(1px,1px,1px,1px);
  height:1px;
  overflow:hidden;
@@ -227,6 +227,16 @@
 .footer__social-icon:hover path {
  fill:var(--neutral-color)
 }
+.footer__copyright,
+.footer__title {
+ letter-spacing:.05em;
+ text-transform:uppercase
+}
+.footer__item,
+.footer__title {
+ -moz-font-smoothing:antialiased;
+ -webkit-font-smoothing:antialiased
+}
 .footer__title {
   font-family: var(--sans-serif);
  font-size:12px;
@@ -235,8 +245,6 @@
  color:#fff;
  color:var(--lightest-color,#fff);
  font-weight:700;
- letter-spacing: 0.05em;
- text-transform: uppercase;
 }
 @media screen and (min-width:961px) {
  .footer__title {
