@@ -22,6 +22,23 @@ body {
   }
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px,1px,1px,1px);
+  width: 1px;
+  height: 1px;
+  word-wrap: normal;
+}
+
+.visually-hidden.focusable:focus {
+  position: static;
+  overflow: visible;
+  clip: auto;
+  width: auto;
+  height: auto;
+}
+
 .global-header-v2 {
   font-family: var(--risd-sans);
   color: var(--risd-color-black);
