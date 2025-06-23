@@ -7,6 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy:global-nav": "rm-wh push-static shared.risd.systems --staticFolder=global-nav --staticPrefix=global-nav",
     "deploy:global-footer": "rm-wh push-static shared.risd.systems --staticFolder=global-footer --staticPrefix=global-footer",
+    "deploy:static": "rm-wh push-static shared.risd.systems --staticFolder=static --staticPrefix=static",
+    "deploy:global-v2": "npm run deploy:static && rm-wh push-static shared.risd.systems --staticFolder=global-v2 --staticPrefix=global-v2",
     "deploy": "npm run deploy:global-nav && npm run deploy:global-footer"
   },
   "author": "",
