@@ -27,34 +27,36 @@ body {
   color: var(--risd-color-black);
 }
 
-.ghv2-second-row a {
-  color: var(--risd-color-black);
+.ghv2-second-row :is(a, a:visited) {
   text-decoration: none;
+  color: var(--risd-color-black);
+}
+
+.ghv2-second-row a span {
+  color: var(--risd-color-black);
   transition: color 0.2s ease-in;
 }
 
-.ghv2-second-row svg {
+.ghv2-second-row a svg {
   stroke: var(--risd-color-black);
   transition: stroke 0.2s ease-in;
 }
 
 .ghv2-second-row {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.ghv2-second-row li {
-  padding: 0;
+.ghv2-second-row a {
   display: flex;
   gap: var(--gv2-space-1);
   align-items: center;
 }
 
-.ghv2-second-row li:hover a {
+.ghv2-second-row a:hover span {
   color: var(--risd-color-blue);
 }
-.ghv2-second-row li:hover svg {
+.ghv2-second-row a:hover svg {
   stroke: var(--risd-color-blue);
 }
 
