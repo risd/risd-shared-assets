@@ -43,7 +43,10 @@ body {
   font-family: var(--risd-sans);
   color: var(--risd-color-black);
 }
-
+.ghv2-second-row a {
+  font-size: var(--risd-nav-a-font-size);
+  line-height: var(--risd-nav-a-line-height);
+}
 .ghv2-second-row :is(a, a:visited) {
   text-decoration: none;
   color: var(--risd-color-black);
@@ -181,6 +184,8 @@ body {
 .gfv2-body p {
   margin-block: 0;
   font-family: var(--risd-sans);
+  font-size: var(--risd-footer-p-font-size);
+  line-height: var(--risd-footer-p-line-height);
 }
 .gfv2-risd-seal {
   --risd-seal-color: var(--risd-color-white);
