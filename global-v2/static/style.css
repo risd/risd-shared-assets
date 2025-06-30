@@ -3,6 +3,9 @@ body {
 }
 
 :root {
+  --risd-sans: 'risd-sans', Helvetica, Arial, sans-serif;
+  --risd-serif: 'risd-serif-complete', Georgia, serif;
+  
   --gv2-space-1: 8px;
   --gv2-space-2: 16px;
   --gv2-space-3: 24px;
@@ -13,6 +16,16 @@ body {
   --ghv2-seal-dim-lg: 80px;
   --ghv2-seal-dim: var(--ghv2-seal-dim-sm);
   --ghf2-seal-dim: var(--ghv2-seal-dim);
+
+  --risd-color-blue: #2454FF;
+  --risd-color-black: #000;
+  --risd-color-white: #FFF;
+  --risd-color-off-white: #F5F5F3;
+
+  --risd-nav-a-font-size: 16px;
+  --risd-nav-a-line-height: 1;
+  --risd-footer-p-font-size: 16px;
+  --risd-footer-p-line-height: 1;
 }
 
 @media screen and (min-width: 500px) {
