@@ -43,10 +43,7 @@ body {
   font-family: var(--risd-sans);
   color: var(--risd-color-black);
 }
-.ghv2-second-row a {
-  font-size: var(--risd-nav-a-font-size);
-  line-height: var(--risd-nav-a-line-height);
-}
+
 .ghv2-second-row :is(a, a:visited) {
   text-decoration: none;
   color: var(--risd-color-black);
@@ -71,6 +68,8 @@ body {
   display: flex;
   gap: var(--gv2-space-1);
   align-items: center;
+  font-size: var(--risd-nav-a-font-size);
+  line-height: var(--risd-nav-a-line-height);
 }
 
 .ghv2-second-row a:hover span {
