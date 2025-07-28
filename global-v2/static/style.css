@@ -145,6 +145,8 @@ body {
 .ghv2-risd-seal {
   width: var(--ghv2-seal-dim);
   height: var(--ghv2-seal-dim);
+  min-height: var(--ghv2-seal-dim);
+  flex-shrink: 0;
 }
 
 .ghv2-h1 {
